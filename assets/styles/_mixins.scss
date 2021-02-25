@@ -1,0 +1,36 @@
+/* Mixins */
+
+@mixin primaryTextStyle($fontWeight, $fontSize, $lineHeight, $fontColor) {
+    font-style: normal;
+    font-weight: $fontWeight;
+    font-size: $fontSize;
+    line-height: $lineHeight;
+    color: $fontColor;
+}
+
+@mixin primaryHeading($whiteColor) {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 48px;
+    color: $whiteColor;
+}
+
+@mixin beforeAfters($topValue, $bottomValue, $leftValue, $rightValue){
+    content: '';
+    position: absolute;
+    margin: auto;
+    top: $topValue;
+    bottom: $bottomValue;
+    left: $leftValue;
+    right: $rightValue;
+
+}
+
+@mixin backgroundImage ($bgImg, $bgColor: transparent, $bgSize: contain, $bgPos: center) {
+    background-color: $bgColor;
+    background-image: $bgImg;
+    background-size: $bgSize;
+    background-position: $bgPos;
+    background-repeat: no-repeat;
+}

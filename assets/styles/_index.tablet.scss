@@ -1,0 +1,302 @@
+/* Imports */
+
+@import '_mixins.scss';
+@import '_normalize.scss';
+@import '_variables.scss';
+
+/* Nav Tablet */
+
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+
+    .header {
+        background-image: none;
+
+
+        &__inner {
+            padding-top: 75px;
+            padding-bottom: 240px;
+            background-image: url(../Images/icons/Group4.svg);
+            background-repeat: no-repeat;
+            background-size: 50%;
+            background-position: bottom;
+        }
+    }
+
+    .nav {
+        align-items: center;
+
+        &__right {
+            align-items: center;
+        }
+    }
+
+    .nav-link {
+
+        &--button {
+            margin-left: 170px;
+        }
+    }
+}
+
+/* Hero Tablet */
+
+@media screen and (max-width: 768px) {
+
+    .site-hero {
+        flex-direction: column;
+
+        &__left {
+            text-align: center;
+            margin-bottom: 24px;
+        }
+
+        &__right {
+            width: 76%;
+            text-align: center;
+        }
+    }
+
+    .big-heading{
+        @include primaryTextStyle(bold, 64px, 56px, $whiteColor);
+    }
+
+    .hero-line {
+        display: none;
+    }
+
+    .team-item-left {
+
+        &__icon {
+            fill: $raptureBlue;
+
+            &:hover {
+                fill: $lightCoral;
+            }
+
+        }
+    }
+}
+
+/* Team Taablet */
+
+@media screen and (max-width: 768px) {
+
+    .team-section {
+        background-position: right top;
+
+        &__inner {
+            flex-direction: column;
+            padding-top: 136px;
+            padding-bottom: 100px;
+            align-items: left;
+            padding-left: 100px;
+        }
+    }
+
+    .team-right {
+        width: 60%;
+
+        &__line {
+            top: 100px;
+            left: 100px;
+        }
+
+        &__heading {
+            @include primaryTextStyle(bold, 32px, 32px, $whiteColor);
+            margin-bottom: 65px;
+        }
+    }
+
+    .team-left{
+        width: 80%;
+        position: relative;
+        left: 30px;
+    }
+}
+
+/* Stories Section */
+
+@media screen and (max-width: 768px) {
+    .stories-section{
+        &__inner{
+            padding: 100px 0 20px 0;
+        }
+    }
+
+    .stories-top{
+        width: 65%;
+
+        &__heading{
+            @include primaryTextStyle (700, 32px, 32px, $whiteColor);
+        }
+    }
+
+    .stories-bottom{
+        flex-direction: column;
+
+        &__item{
+            width: 80%;
+            margin-bottom: 80px;
+        
+            &:last-child{
+                margin-bottom: 0;
+            }
+        
+        }
+    }
+}
+
+/* Little Section */
+
+@media screen and (max-width: 768px) {
+    .little-section{
+        background-size: 165px 120px;
+    }
+
+    .primary-heading--blue{
+        @include primaryTextStyle (700, 32px, 32px, #012F34);
+    }
+}
+
+/* Footer */
+
+@media screen and (max-width: 768px) {
+    .footer-desk{
+        display: none;
+    }
+
+    .footer-tab{
+        display: block;
+        background: #002529;
+    
+        &__inner{
+            padding-top: 56px;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    .footer-left{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+
+    .logo-img{
+        width: 96px;
+        height: 24px;
+        object-fit: contain;
+        margin-bottom: 53px;
+    }
+
+    .footer-links{
+        margin-bottom: 32px;
+
+        &__link{
+            margin-right: 24px;
+            @include primaryTextStyle(600, 15px, 25px, $whiteColor);
+
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .footer-right{
+
+        &__inner{
+            margin-bottom: 35px;
+        }
+    }
+
+    .adress{
+        text-align: right;
+    }
+
+}
+
+/* About Page */
+
+@media screen and (max-width: 768px) {
+    
+    /* About Header and Hero */
+    
+    .header-about{
+        &__inner{
+            padding-top: 65px;
+            padding-bottom: 114px;
+        }
+    }
+
+    .site-hero-about{
+        flex-direction: column;
+
+    }
+
+    .big-heading{
+        text-align: center;
+        margin-bottom: 24px;
+    }
+
+    .primary-text{
+        text-align: center;
+    }
+
+    .site-hero-about{
+        &__right{
+            width: 75%;
+        }
+    }
+
+    /* Team About */
+
+    .team-about{
+        &__inner{
+            padding: 100px 97px 128px 97px;
+        }
+    }
+
+    .our-team{
+        align-items: flex-start;
+
+        &__item{
+            width: 48%;
+            margin-bottom: 76px;
+            justify-content: space-around;
+
+            &:nth-child(1n+5){
+                margin: 0;
+            }
+        }
+    }
+
+    /* Clients About */
+
+    .clients-section{
+        background-position: 0 -100px;
+        background-size: 200px 200px;
+
+        &__inner{
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
+    }
+
+    .primary-heading{
+        @include primaryTextStyle (700, 32px, 32px, $whiteColor)
+    }
+
+    .clients{
+        height: 30px;
+        width: 120px;
+        object-fit: contain;
+    }
+
+    
+
+}
+
+
